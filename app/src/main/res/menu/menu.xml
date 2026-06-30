@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/agregar"
+        android:title="Agregar"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/editar"
+        android:title="Editar"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/eliminar"
+        android:icon="@drawable/ic_eliminar"
+        android:title="Eliminar"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/ver"
+        android:title="Ver"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/exit"
+        android:icon="@drawable/ic_salida"
+        android:title="Cerrar Sesion"
+        app:showAsAction="ifRoom"
+        />
+    <item
+        android:id="@+id/contacto"
+        android:title="Contacto"
+        app:showAsAction="never"
+        />
+    <item
+        android:id="@+id/creador"
+        android:title="Creador"
+        app:showAsAction="never"
+        />
+</menu>

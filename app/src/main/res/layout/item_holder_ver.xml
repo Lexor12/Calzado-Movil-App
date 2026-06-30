@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+    <TextView
+        android:id="@+id/txtNombre"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="Nombre"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="#25252B"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:clickable="true"
+        android:textColor="#FFF"
+        android:fontFamily="@font/dosis_bold"
+        />
+    <TextView
+        android:id="@+id/txtMarca"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:background="#28283B"
+        android:textStyle="bold"
+        android:text="Marca"
+        android:textSize="25sp"
+        android:fontFamily="@font/dosis_bold"
+        android:layout_height="match_parent"
+        android:textColor="#FFF"
+        android:gravity="center"/>
+</LinearLayout>

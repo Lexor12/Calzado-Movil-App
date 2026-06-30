@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@drawable/bg_calzado"
+    tools:context=".agregarCalzado">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFFFFF"
+        android:padding="10dp"
+        >
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/edtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7A6A4F"
+            android:inputType="textCapWords"
+            android:textColorHint="#7A6A4F"
+            android:textSize="16sp"
+            android:fontFamily="@font/dosis_regular"
+            android:hint="Nombre"
+            />
+        <EditText
+            android:id="@+id/edtMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7A6A4F"
+            android:textColorHint="#7A6A4F"
+            android:inputType="textCapWords"
+            android:textSize="16sp"
+            android:fontFamily="@font/dosis_regular"
+            android:hint="Marca"
+            />
+        <EditText
+            android:id="@+id/edtModelo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7A6A4F"
+            android:textColorHint="#7A6A4F"
+            android:inputType="text"
+            android:textSize="16sp"
+            android:fontFamily="@font/dosis_regular"
+            android:hint="Modelo"
+            />
+        <EditText
+            android:id="@+id/edtTelefono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#7A6A4F"
+            android:textColorHint="#7A6A4F"
+            android:textSize="16sp"
+            android:fontFamily="@font/dosis_regular"
+            android:hint="Teléfono de Contacto"
+            android:maxLength="10"
+            android:inputType="number"
+            />
+        <EditText
+            android:id="@+id/edtExistencias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Existencias"
+            android:textColor="#7A6A4F"
+            android:textColorHint="#7A6A4F"
+            android:textSize="16sp"
+            android:fontFamily="@font/dosis_regular"
+            android:inputType="number"
+            android:maxLength="8"
+            /><!-- de 3  de max length ya que va de 0 a 100-->
+        <EditText
+            android:id="@+id/edtPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Precio"
+            android:textColor="#7A6A4F"
+            android:textColorHint="#7A6A4F"
+            android:textSize="16sp"
+            android:fontFamily="@font/dosis_regular"
+            android:inputType="number"
+            android:maxLength="8"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="20sp"
+            android:fontFamily="@font/dosis_bold"
+            android:text="Tipo de Calzado:"
+
+            />
+        <Spinner
+            android:id="@+id/spnTipoCalzado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="26sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="20sp"
+            android:fontFamily="@font/dosis_bold"
+            android:text="Material:"
+            />
+        <Spinner
+            android:id="@+id/spnMaterial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="26sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="20sp"
+            android:fontFamily="@font/dosis_bold"
+            android:text="Talla:"
+            />
+        <Spinner
+            android:id="@+id/spnTalla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="26sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="20sp"
+            android:fontFamily="@font/dosis_bold"
+            android:text="Color:"
+            />
+        <Spinner
+            android:id="@+id/spnColor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="26sp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="20sp"
+            android:fontFamily="@font/dosis_bold"
+            android:text="Genero:"
+            />
+        <Spinner
+            android:id="@+id/spnGenero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#1f0320 "
+            android:textSize="26sp"
+            />
+        <Button
+            android:id="@+id/btnAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1E1E24 "
+            android:textSize="20sp"
+            android:fontFamily="@font/dosis_bold"
+            android:text="Agregar"
+            />
+        <Button
+            android:id="@+id/btnVer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#4A4E69 "
+            android:textSize="20sp"
+            android:fontFamily="@font/dosis_bold"
+            android:text="Ver"
+            />
+    </LinearLayout>
+
+</LinearLayout>

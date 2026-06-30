@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Calzado</string>
+    <string-array name="TipoCalzado">
+        <item>Tenis</item>
+        <item>Zapato</item>
+        <item>Bota</item>
+        <item>Tacon</item>
+        <item>Sandalia</item>
+    </string-array>
+    <string-array name="Material">
+        <item>Piel</item>
+        <item>Sintetico</item>
+        <item>Gamuza</item>
+        <item>Lona</item>
+        <item>Charol</item>
+    </string-array>
+    <string-array name="Talla">
+        <item>22</item>
+        <item>22.5</item>
+        <item>23</item>
+        <item>23.5</item>
+        <item>24</item>
+        <item>24.5</item>
+        <item>25</item>
+        <item>25.5</item>
+        <item>26</item>
+        <item>26.5</item>
+        <item>27</item>
+        <item>27.5</item>
+        <item>28</item>
+        <item>28.5</item>
+        <item>29</item>
+        <item>29.5</item>
+        <item>30</item>
+    </string-array>
+    <string-array name="Color">
+        <item>Negro</item>
+        <item>Blanco</item>
+        <item>Café</item>
+        <item>Miel</item>
+        <item>Azul</item>
+        <item>Gris</item>
+        <item>Rojo</item>
+        <item>Rosa</item>
+        <item>Verde</item>
+        <item>Dorado</item>
+        <item>Multicolor</item>
+    </string-array>
+    <string-array name="Genero">
+        <item>Caballero</item>
+        <item>Dama</item>
+        <item>Unisex</item>
+        <item>Infantil</item>
+    </string-array>
+</resources>

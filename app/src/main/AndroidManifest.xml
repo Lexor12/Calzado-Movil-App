@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" /><!-- con required false decimos que no es obligatoria la funcion de llamar para funcionar la app-->
+    <!--Le avisa a la Google Play Store y al sistema operativo qué componentes físicos (hardware) del teléfono planea usar tu app. -->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Qué indica?: Le da permiso a tu aplicación para abrir conexiones de red hacia el exterior.-->
+
+    <application
+        android:allowBackup="true"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Calzado">
+
+        <activity
+            android:name=".creador"
+            android:exported="false" />
+        <activity
+            android:name=".contacto"
+            android:exported="false" />
+        <activity
+            android:name=".tarjeta_calzado"
+            android:exported="false" />
+        <activity
+            android:name=".verCalzado"
+            android:exported="false" />
+        <activity
+            android:name=".eliminarCalzado"
+            android:exported="false" />
+        <activity
+            android:name=".editarCalzado"
+            android:exported="false" />
+        <activity
+            android:name=".agregarCalzado"
+            android:exported="false" />
+        <activity
+            android:name=".IniciarSesion"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
